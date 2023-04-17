@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+.slide{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#slide1{
+    background-color: #111111;
+    color: white;
+    flex-direction: column;
+}
+
+#slide2{
+    background-color: #ec3c07;
+}
+
+.html-template{
+    display: none;
+}
+.buttons{
+    width: 16px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 2%;
+    background-color: rgba(0, 0, 0, .3);
+    padding: .5em;
+    border-radius: .5em;
+}
+.slidebutton{
+    background-color: rgb(224, 224, 224);
+    padding: .4rem;
+    border-radius: 50%;
+    margin-bottom: 1em;
+    border: none;
+    color: white;
+    transition: all .2s;
+    cursor: pointer;
+}
+.slidebutton--active{
+    padding: .5rem;
+    background-color: orangered
+}
+.slidebutton:hover{
+    padding: .5rem;
+    background-color: orangered
+}
+.slidebutton:last-of-type{
+    margin: 0;
+}
